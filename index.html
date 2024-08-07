@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Years of Friendship</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="welcome-overlay">
+    <div id="welcome-message"></div>
+</div>
+
+<div id="audio-player">
+    <audio id="background-music" loop>
+        <source src="audio/sourat%20alhakah.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="music-toggle">🔇</button>
+</div>
+<header>
+    <h1>10 Years of Friendship</h1>
+    <nav>
+        <ul>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#map">Adventure Map</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="timeline">
+        <h2>Our Journey</h2>
+        <div class="timeline-container">
+            <!-- Timeline items will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Our Adventures</h2>
+        <h3 style="font-size: 3em; text-align: center;"><B>ملناش مغامرات كتير يعني</B></h3>
+        <div id="world-map"></div>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="slideshow-container">
+            <!-- Slideshow images will be dynamically added here -->
+        </div>
+        <div class="slideshow-controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="playPauseBtn">Pause</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Celebrating 10 Years of Friendship</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
